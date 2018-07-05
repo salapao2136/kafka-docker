@@ -1,6 +1,6 @@
 const { Client, HighLevelConsumer } = require('kafka-node')
 var client = new Client('localhost:2181')
-var topics = [{ topic: 'test-kafka' }]
+var topics = [{ topic: 'topic-kafka', partition: 1 }]
 var options = { autoCommit: true, fetchMaxWaitMs: 1000, fetchMaxBytes: 1024 * 1024 }
 var consumer = new HighLevelConsumer(client, topics, options)
 
