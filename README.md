@@ -1,5 +1,5 @@
 # kafka-docker
 
-# IT RUN 
+# run it
 | docker-compose up -d
   
